@@ -193,7 +193,7 @@ function mqttClient() {
     });
   });
 
-  /*client.on("message", function (topic, message) {
+  client.on("message", function (topic, message) {
     // message is Buffer
     // console.log("topic : ", topic)
 
@@ -208,30 +208,14 @@ function mqttClient() {
       console.log(topic);
       var payload = JSON.parse(message);
       console.log(payload);
-
-
-
-
     } 
     
     else {
       
     }
     
-
-
-
-
-
-    
-
-
-
-
-
-
-    
-  });*/
+  
+  });
 
   return client;
 }
